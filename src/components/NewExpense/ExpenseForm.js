@@ -53,9 +53,10 @@ const ExpenseForm = (props) => {
       //   date: new Date(userInput.inputDate),
       // };
       title: enteredTitle,
-      amount: enteredAmount,
+      amount: +enteredAmount,
       date: new Date(enteredDate),
     };
+
     props.onSaveExpenseData(expenseData);
     setEnteredTitle('');
     setEnteredAmount('');
